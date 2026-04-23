@@ -1,0 +1,105 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&display=swap'); 
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Fontdiner+Swanky&family=Playwrite+IE:wght@100..400&display=swap');
+
+body {
+  width: 86%;
+  margin: 0 auto;
+  background-color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif,system-ui;
+}
+
+ article{
+    margin: 10px;
+    font-size: 1em;
+    border-radius: 10px;
+ }
+
+
+article > h2 {
+    background-color: #F2C1D1;
+    color: white;
+    font-size: 1.6em;
+    text-shadow: 1px 1px 0.5px #D4AF37, 1px 1px 12px black;
+    font-family: "Fontdiner Swanky", serif;
+    text-align: center;
+    padding: 8px;
+    margin: 1em 20px;
+    border-radius: 8px;
+}
+
+article > img {
+    float: right; /* coloca la imagen a la derecha y hace que el texto fluya alrededor */
+    width: 20%;
+    height: auto;
+}
+
+article > p {
+  text-align: justify;
+  width: 70%;
+}
+
+
+ article > p:first-of-type::first-letter {
+          font-family: "Fontdiner Swanky", serif;
+          font-size: 3em;    /* Aumenta el tamaño para que ocupe varias líneas */
+          line-height: 1.5;
+          color: white;
+          background-color: #81D8D0;
+          text-shadow: 0.5px 0.5px 0.5px black;
+          padding: 0 7px;
+          float: left; /* Hace que el texto fluya alrededor */
+          margin-right: 10px;
+        }
+
+article > p:last-of-type::after {
+          content: " ";
+          display: block;
+          width: 100%;      /* Ajusta el tamaño según necesites */
+          height: 50px;     /* Alto de la imagen separadora */
+          background-image: url("../img/divider.png");
+          background-repeat: no-repeat;
+          background-position: center;
+          margin-top: 20px; /* Espacio entre el párrafo y la imagen */
+          background-size: contain;
+        }
+
+article > address {
+    text-align: right;
+    font-family: "Playwrite+IE";
+    color: blue;
+    font-weight: 400;
+    font-size: 1em;
+    font-optical-sizing: auto;
+    margin-right: 8%;
+}
+
+.moraleja {
+    width: 80%;
+    text-align: center;
+    background-color: rgb(38, 37, 37);
+    color: white;
+    border: auto;
+}
+
+.moraleja::before {
+  content: "Moraleja";
+  font-family: "Fontdiner Swanky", serif;
+  color: #FFE4E1;
+  text-shadow: 0.5px 0.5px 0px #F2C1D1;
+  letter-spacing: 1px;
+  font-weight: normal;
+  font-size: 1.1em;
+  display: block;     /* Forzamos que la palabra "Moraleja" ocupe toda una línea */
+  text-align: center; /* Para centrar el texto */
+  margin-bottom: 5px; /* Espacio entre el título y el párrafo */
+}
+
+
+
+
+
+
+
+
